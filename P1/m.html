@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to the wicked</title>
+    
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <nav class="realNav">
+        <a href="/P2/m.html">About Us</a>
+        <a href="/P1/m.html">Home</a>
+    </nav>
+    <nav class="dropdownMenu">
+        <div class="nav-container">
+            <select id="dropdownMenu">
+                <option value="#">More...</option>
+                <option value="/P2/m.html">About Us</option>
+                <option value="/P1/m.html">Donation</option>
+                <option value="/P3/m.html">Impact</option>
+            </select>
+        </div>
+    </nav>
+
+    <h1>Make a Donation, Save a Life</h1>
+
+    <form id="donationForm">
+        <label for="amount">Donation Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required><br>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="submit">Donate</button>
+    </form>
+
+    <div id="message"></div>
+    <footer>
+        <p>&copy; 2023 Charity Donation. All rights reserved.</p>
+    </footer>
+
+    <script src="m.js" defer></script>
+</body>
+</html>

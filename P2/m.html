@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="/P1/m.css">
+</head>
+<body>
+    <nav>
+        <a href="/P2/m.html">About Us</a>
+        <a href="/P1/m.html">Donation</a>
+    </nav>
+    <nav class="dropdownMenu">
+        <div class="nav-container">
+            <select id="dropdownMenu">
+                <option value="#">More...</option>
+                <option value="/P2/m.html">About Us</option>
+                <option value="/P1/m.html">Donation</option>
+                <option value="/P3/m.html">Impact</option>
+            </select>
+        </div>
+    </nav>
+
+    
+    <div id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our charity donation site! Your contributions help us make a positive impact on the lives of those in need. Together, we can make a difference and create a better world. Click on the link below to get redirected to the donation site.
+
+        </p>
+        <button id="redirectButton">Visit Donation Page</button>
+    </div>
+    <script>
+        
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = '/P1/m.html'; 
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Charity Donation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
